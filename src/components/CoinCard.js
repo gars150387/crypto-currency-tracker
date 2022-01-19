@@ -80,11 +80,11 @@ export const CoinCard = ({symbol, coinName, priceUsd, percentChange24hr, percent
     return (
         <View style={container}>
         <View style={upperRow}>
-            <Image style={styles.image} source={{ url: images[symbol]}} />
+            <Image style={styles.image} source={{ url: image[symbol]}} />
             <Text style={coinSymbol}>{symbol}</Text>
             <Text style={separator}>|</Text>
             <Text style={coinName}>{coinName}</Text>
-            <Text style={coinPrice}><Text style={priceUsd}> $ </Text></Text>
+            <Text style={coinPrice}>{priceUsd}<Text style={moneySymbol}> $ </Text></Text>
         </View>
 
         <View style={statisticsContainer}>
