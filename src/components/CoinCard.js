@@ -76,28 +76,26 @@ const {
     percentChangePlus
 } = styles
 
-const CoinCard = ({symbol, coinName, priceUsd, percentChange24hr, percentChange7d}) =>{
+export const CoinCard = ({symbol, coinName, priceUsd, percentChange24hr, percentChange7d}) =>{
     return (
-        <>
-                <View style={container}>
-            <View style={upperRow}>
-                <Image style={styles.image} source={{ url: images[symbol]}} />
-                <Text style={coinSymbol}>{symbol}</Text>
-                <Text style={separator}>|</Text>
-                <Text style={coinName}>{coinName}</Text>
-                <Text style={coinPrice}><Text style={priceUsd}> $ </Text></Text>
-            </View>
+        <View style={container}>
+        <View style={upperRow}>
+            <Image style={styles.image} source={{ url: images[symbol]}} />
+            <Text style={coinSymbol}>{symbol}</Text>
+            <Text style={separator}>|</Text>
+            <Text style={coinName}>{coinName}</Text>
+            <Text style={coinPrice}><Text style={priceUsd}> $ </Text></Text>
         </View>
 
         <View style={statisticsContainer}>
-            <Text>24Hr:
-                <Text style={percentChange24hr < 0 ? percentChangeMinus : percentChangePlus}>{percentChange24hr} %</Text> 
-            </Text>
+        <Text>24Hr:
+            <Text style={percentChange24hr < 0 ? percentChangeMinus : percentChangePlus}>{percentChange24hr} %</Text> 
+        </Text>
 
-            <Text>7D:
-                <Text style={percentChange7d < 0 ? percentChangeMinus : percentChangePlus}>{percentChange7d} %</Text> 
-            </Text>
-        </View>
-        </>
+        <Text>7D:
+            <Text style={percentChange7d < 0 ? percentChangeMinus : percentChangePlus}>{percentChange7d} %</Text> 
+        </Text>
+    </View>
+    </View>
     )
 }
