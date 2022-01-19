@@ -76,14 +76,14 @@ const {
     percentChangePlus
 } = styles
 
-export const CoinCard = ({symbol, coinName, priceUsd, percentChange24hr, percentChange7d}) =>{
+export const CoinCard = ({symbol, coin_name, priceUsd, percentChange24hr, percentChange7d}) =>{
     return (
         <View style={container}>
         <View style={upperRow}>
             <Image style={styles.image} source={{ url: image[symbol]}} />
             <Text style={coinSymbol}>{symbol}</Text>
             <Text style={separator}>|</Text>
-            <Text style={coinName}>{coinName}</Text>
+            <Text style={coinName}>{coin_name}</Text>
             <Text style={coinPrice}>{priceUsd}<Text style={moneySymbol}> $ </Text></Text>
         </View>
 
