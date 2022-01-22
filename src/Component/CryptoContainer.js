@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import Spinner from 'react-native-loading-spinner-overlay'
 import FetchCoinData from './../Actions/FetchCoinData'
 import { CoinCard } from './CoinCard'
