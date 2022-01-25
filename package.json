@@ -1,6 +1,7 @@
 {
   "name": "react-native-redux-crypto-tracker",
   "version": "1.0.0",
+  "homepage": "https://github.com/gars150387/crypto-currency-tracker",
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
@@ -9,13 +10,19 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "expo": "~44.0.2",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "react-native-loading-spinner-overlay": "^3.0.0",
+    "react-native-web": "0.17.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
